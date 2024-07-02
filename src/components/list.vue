@@ -1,4 +1,5 @@
 <template>
+<router-link to="/">home으로...</router-link>
 <div v-for="(post, index) in posts" :key="post.title + index">
   <h4>{{post.title}}</h4>
   <!-- <h5>{{post.content}}</h5> -->

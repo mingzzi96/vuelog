@@ -1,6 +1,4 @@
 <template>
-  <h2>react 개발자 vue 공부하기</h2>
-  <!-- <List :posts="posts"/> -->
   <router-view :posts="posts"></router-view>
 </template>
 
