@@ -1,5 +1,5 @@
 <template>
-{{$route.params.id}}
+<button @click="$router.go(-1)">뒤로가기</button>
   <div>
     <h1>{{posts[$route.params.id].title}}</h1>
     <h5>{{posts[$route.params.id].date}}</h5>
