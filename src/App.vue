@@ -1,15 +1,23 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <h2>react 개발자 vue 공부하기</h2>
+  <!-- <List :posts="posts"/> -->
+  <router-view :posts="posts"></router-view>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+// import List from './components/list.vue'
+import ListData from './assets/list-data'
 
 export default {
   name: 'App',
+  data(){
+    return {
+      posts: ListData
+    }
+  },
   components: {
-    HelloWorld
+    // List,
   }
 }
 </script>
