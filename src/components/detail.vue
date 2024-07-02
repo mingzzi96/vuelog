@@ -1,14 +1,18 @@
 <template>
+{{$route.params.id}}
   <div>
-    <h1>제목입니다</h1>
-    <h5>2024.07.02</h5>
-    <p>컨텐츠 내용 입니다</p>
+    <h1>{{posts[$route.params.id].title}}</h1>
+    <h5>{{posts[$route.params.id].date}}</h5>
+    <p>{{posts[$route.params.id].content}}</p>
   </div>
 </template>
 
 <script>
 export default {
-    name: "DetailPage"
+    name: "DetailPage",
+    props: {
+        posts: Array
+    }
 }
 </script>
 

@@ -11,11 +11,10 @@ export default {
   name: 'App',
   data(){
     return {
-      posts: ListData
+      posts: ListData,
     }
   },
   components: {
-    // List,
   }
 }
 </script>
