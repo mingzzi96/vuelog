@@ -5,6 +5,7 @@
     <h5>{{posts[$route.params.id].date}}</h5>
     <p>{{posts[$route.params.id].content}}</p>
   </div>
+    <router-view></router-view>
 </template>
 
 <script>
